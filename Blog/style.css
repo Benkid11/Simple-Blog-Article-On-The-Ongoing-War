@@ -1,23 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    background-image: url(bg-image.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #FFFFFF;
     color: #242424;
     font-family: "Arial", "Helvetica", sans-serif;
 }
 
-button{
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px auto; 
+}
+
+.overlay {
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: #f4f4f4;     
+    opacity: 0.95;   
+    border-bottom: 1px solid #242424; 
+    position: sticky;
+    top: 0;
+}
+
+button {
     background-color: #1A8917;
     color: white;
     border: none;
     padding: 10px 20px;
+    border-radius: 900px;             
     cursor: pointer;
+    font-size: 14px;
 }
 
 .story-content {
-  /* This gives the text those "little feet" that make it look like a book */
   font-family: "Georgia", serif;
-  
-  /* This is a "Medium secret": 
-     Making the font slightly larger and adding space between lines. */
   font-size: 20px;
   line-height: 1.6;
   
@@ -27,14 +58,7 @@ button{
   padding: 20px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 24px;
-    background-color: #f4f4f4;        
-    border-bottom: 1px solid #242424; 
-}
+
 
 .nav-links {
     display: flex;
@@ -48,18 +72,14 @@ a {
     font-size: 14px;
 }
 
-button {
-    background-color: #1A8917;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 900px;             
-    cursor: pointer;
-    font-size: 14px;
-}
-
 button:hover {
     background-color: #166d13;        
+}
+
+h1, h2, h3 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    text-transform: capitalize;
 }
 
 p{
