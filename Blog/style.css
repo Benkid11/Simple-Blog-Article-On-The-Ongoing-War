@@ -37,6 +37,14 @@ nav {
     top: 0;
 }
 
+select{
+    padding: 8px 12px;
+    border-radius: 900px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
 button {
     background-color: #1A8917;
     color: white;
@@ -86,4 +94,25 @@ p{
     margin: 0;
     padding: 0 0 16px 0; 
     text-align: justify;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scrolltopbtn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+#scrolltopbtn:hover {
+    background-color: #f4f4f4;
 }
