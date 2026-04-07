@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(bg-image.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FFFFFF;
+    color: #242424;
+    font-family: "Arial", "Helvetica", sans-serif;
+    text-align: justify;
+}
+
+#intro {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px auto; 
+}
+
+.overlay {
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: #f4f4f4;     
+    opacity: 0.95;   
+    border-bottom: 1px solid #242424; 
+    position: sticky;
+    top: 0;
+}
+
+.sidebar {
+    position: fixed;
+    height: auto;
+    width: auto;
+    top: 150px;
+    left: 32px;
+    background-color: rgba(244, 244, 244, 0.7);
+}
+
+.sidebar a{
+    display: block;
+    padding: 17px 12px;
+    color: #000;
+}
+
+select{
+    padding: 8px 12px;
+    border-radius: 900px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+button {
+    background-color: #1A8917;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 900px;             
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.story-content {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  
+  /* Keeps the text from stretching across the whole screen */
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;                        
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #166d13;        
+}
+
+h1, h2, h3 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+p{
+    text-indent: 20px;
+    margin: 0;
+    padding: 0 0 16px 0; 
+    text-align: justify;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scrolltopbtn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+#scrolltopbtn:hover {
+    background-color: #f4f4f4;
+}
